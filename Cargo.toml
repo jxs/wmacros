@@ -1,0 +1,18 @@
+[package]
+name = "warp-macros"
+version = "0.1.0"
+authors = ["João Oliveira <hello@jxs.pt>"]
+edition = "2018"
+repository = "https://github.com/jxs/warp-macros"
+categories = ["web-programming::http-server"]
+keywords = ["warp", "server", "http", "hyper", "macros"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+syn = { version = "1", features = ["full", "extra-traits"] }
+quote = "1"
+warp = "0.2.1"
+
